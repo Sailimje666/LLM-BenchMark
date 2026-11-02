@@ -1,0 +1,11 @@
+id,problem_statement,ground_truth,domain,category,difficulty,evaluation_method,expected_format,constraints,tolerance,regex_pattern
+math_sample_01,What is 15 multiplied by 14?,210,Math,Basic Arithmetic,Easy,numeric_tolerance,Integer,Only output the number,0.0,
+math_sample_02,What is 35% of 240?,84,Math,Percentages,Easy,numeric_tolerance,Number,Number only,0.01,
+math_sample_03,If a train travels 300 km in 4 hours what is its speed in km/h?,75,Math,Rate,Medium,numeric_tolerance,Number,Provide only the speed,0.0,
+logic_sample_01,All dogs are animals. Max is a dog. Is Max an animal? Answer Yes or No.,Yes,Logic,Deduction,Easy,exact_match,Yes or No,Answer only Yes or No,0.0,
+logic_sample_02,If it rains the grass gets wet. The grass is dry. Did it rain? Answer Yes or No.,No,Logic,Contraposition,Medium,exact_match,Yes or No,Answer only Yes or No,0.0,
+code_sample_01,Write a Python function add(a, b) that returns their sum.,def add(a, b):\n    return a + b,Coding,Basic,Easy,semantic,Python code,Function name add,0.0,
+code_sample_02,What is the time complexity of looking up a key in a Python dict on average?,O(1),Coding,Data Structures,Easy,exact_match,Big-O,Standard notation,0.0,
+extract_sample_01,Extract the user handle from: Please follow @openai on Twitter.,@openai,Text Extraction,Social Handle,Easy,exact_match,Handle,Include @ symbol,0.0,
+extract_sample_02,Extract the postal code from: 10 Downing St London SW1A 2AA UK.,SW1A 2AA,Text Extraction,Address,Medium,exact_match,Postcode,Exact code only,0.0,
+extract_sample_03,Convert to JSON with name and age: Alice is 28 years old.,{"name": "Alice", "age": 28},Text Extraction,JSON,Medium,json_schema,JSON Object,Valid JSON object,0.0,
